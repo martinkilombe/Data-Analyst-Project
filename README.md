@@ -15,6 +15,8 @@
   - The UK Job Distribution Case Study Project was created with Tableau Desktop<br />
 *See on Tableau Public:* **[Dashboard](https://public.tableau.com/views/UKJobDemographicAnalysis2011-2014/AnalysisofUnitedKingdomJobsByDemographics?:language=en-US&:display_count=n&:origin=viz_share_link)**<br />
 
+![Netflix Dashboard](https://github.com/martinkilombe/Data-Analyst-Project/blob/main/UK%20Job%20Distibution%202011-2014/Analysis%20of%20United%20Kingdom%20Jobs%20By%20Demographics2.png)  
+
 
 
 
