@@ -17,6 +17,14 @@
 
 ![Netflix Dashboard](https://github.com/martinkilombe/Data-Analyst-Project/blob/main/UK%20Job%20Distibution%202011-2014/Analysis%20of%20United%20Kingdom%20Jobs%20By%20Demographics2.png)  
 
+#  3. USA Consumer Financial Protection Bureau
+- [x] **SQL** 
+  - Consumer Complaints Dataset: Data cleaning, Basic and Advanced Data Analysis<br />
+*Review the SQL Script:* **[HERE](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL/blob/main/Consmer%20complaints%20analyis%20and%20data%20cleaning.sql)**<br />
+
+
+
+
 
 
 
