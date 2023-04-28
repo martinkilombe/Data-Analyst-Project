@@ -25,7 +25,7 @@
 
 #  4. Forbes Global Companies in 2022 Analysis
 - [x] **SQL** 
-  - Forbes Dataset on top 2000 global companies listed in May 2022: Cleaning the data, and performing Analytics<br />
+  - Forbes Dataset: Cleaning the data, and performing Analytics<br />
 *Review the SQL Script:* **[HERE](https://github.com/martinkilombe/forbes_data_SQL/blob/main/Data%20analysis.sql)**<br />
 
 
