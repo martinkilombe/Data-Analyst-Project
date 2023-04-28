@@ -1,15 +1,6 @@
  
-<h1 align="center">
-  Data Analyst Portfolio Projects
-</h1
-
-<p align="center">This Repo contains personal showcase projects.</p>
-
-
-<b>The following projects are available in this Portfolio set</b>
-#  Netflix Case Study
-#  Worldbank Mortality Rates
-# UK Job Distribution 2011 -2013
-
+# Portfolio Projects
+## Following are my projects in SQL, Tableau & Excel: <br />
+#### *You can also take a look at my Linkedin : [Martin Muti](https://www.linkedin.com/in/martin-muti-226043130/)* <br />
 
 
