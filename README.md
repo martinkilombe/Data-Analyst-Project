@@ -23,6 +23,11 @@
 *Review the SQL Script:* **[HERE](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL/blob/main/Consmer%20complaints%20analyis%20and%20data%20cleaning.sql)**<br />
 
 
+#  4. Forbes Global Companies in 2022 Analysis
+- [x] **SQL** 
+  - Forbes Dataset on top 2000 global companies listed in May 2022: Cleaning the data, and performing Analytics<br />
+*Review the SQL Script:* **[HERE](https://github.com/martinkilombe/forbes_data_SQL/blob/main/Data%20analysis.sql)**<br />
+
 
 
 
