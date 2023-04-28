@@ -19,13 +19,13 @@
 
 #  3. USA Consumer Financial Protection Bureau
 - [x] **SQL** 
-  - Consumer Complaints Dataset: Data cleaning, Basic and Advanced Data Analysis<br />
+  - Consumer Complaints Dataset: **[Cleaning the data, and performing Basic and Advanced Analytics](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL)**<<br />
 *Review the SQL Script:* **[HERE](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL/blob/main/Consmer%20complaints%20analyis%20and%20data%20cleaning.sql)**<br />
 
 
 #  4. Forbes Global Companies in 2022 Analysis
 - [x] **SQL** 
-  - Forbes Dataset: Cleaning the data, and performing Analytics<br />
+  - Forbes Dataset: **[Cleaning the data, and performing Analytics](https://github.com/martinkilombe/forbes_data_SQL)**<br />
 *Review the SQL Script:* **[HERE](https://github.com/martinkilombe/forbes_data_SQL/blob/main/Data%20analysis.sql)**<br />
 
 
