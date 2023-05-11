@@ -19,7 +19,7 @@
 
 #  3. USA Consumer Financial Protection Bureau
 - [x] **SQL** 
-  - Consumer Complaints Dataset: **[Cleaning the data, and performing Basic and Advanced Analytics](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL)**<<br />
+  - Consumer Complaints Dataset: **[Cleaning the data, and performing Basic and Advanced Analytics](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL)**<br />
 *Review the SQL Script:* **[HERE](https://github.com/martinkilombe/Consumer_Complaints_Analysis_SQL/blob/main/Consmer%20complaints%20analyis%20and%20data%20cleaning.sql)**<br />
 
 
