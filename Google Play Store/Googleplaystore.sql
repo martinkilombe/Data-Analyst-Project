@@ -116,6 +116,11 @@ UPDATE googleplaystore
 SET "Size" = CAST(REPLACE("Size", 'k', '') AS DECIMAL(18, 2)) * 1000
 WHERE "Size" LIKE '%k';
 
+UPDATE googleplaystore
+SET "Size" = SUBSTRING("Size", 1, LENGTH("Size") - 3)
+WHERE "Size" LIKE '%.00';
+
+
 /* Installs column -- Removing the commas(,) from the numbers*/
 UPDATE googleplaystore
 SET "Size" = REPLACE("Size", ',', '')
