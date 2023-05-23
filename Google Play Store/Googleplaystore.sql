@@ -115,3 +115,8 @@ WHERE "Size" LIKE '%M';
 UPDATE googleplaystore
 SET "Size" = CAST(REPLACE("Size", 'k', '') AS DECIMAL(18, 2)) * 1000
 WHERE "Size" LIKE '%k';
+
+/* Installs column -- Removing the commas(,) from the numbers*/
+UPDATE googleplaystore
+SET "Size" = REPLACE("Size", ',', '')
+WHERE "Size" LIKE '%,%';
