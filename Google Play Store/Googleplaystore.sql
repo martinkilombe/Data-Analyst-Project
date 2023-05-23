@@ -1,4 +1,5 @@
-
+/*DATA CLEANING*/
+SELECT * FROM googleplaystore;
 /*Total Number of empty App rows -- No empty App Rows*/
 SELECT COUNT(*) as total_rows,
 Count("App") as non_empty_rows,
@@ -106,3 +107,11 @@ FROM googleplaystore;
 DELETE FROM googleplaystore
 WHERE "Rating" IS NULL OR "Type" IS NULL OR "Price" IS NULL OR "Content_Rating" IS NULL OR "Last_Updated" IS NULL OR "Current_Version" IS NULL OR "Android_Version" IS NULL;
 
+/*SIZE Column - Remove the Ms and convert to millions(x1000000), remove the K and convert to thousands(x1000)*/
+UPDATE googleplaystore
+SET "Size" = CAST(REPLACE("Size", 'M', '') AS DECIMAL(18, 2)) * 1000000
+WHERE "Size" LIKE '%M';
+
+UPDATE googleplaystore
+SET "Size" = CAST(REPLACE("Size", 'k', '') AS DECIMAL(18, 2)) * 1000
+WHERE "Size" LIKE '%k';
