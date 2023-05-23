@@ -102,4 +102,7 @@ FROM googleplaystore;
 - Current_version 8 missing /NULL entry
 - Android_version 8 missing /NULL entry */
 
+/*Dropping the above NULL/empty cells so as to increase the quality of our data --- DELETE 1481 entries*/
+DELETE FROM googleplaystore
+WHERE "Rating" IS NULL OR "Type" IS NULL OR "Price" IS NULL OR "Content_Rating" IS NULL OR "Last_Updated" IS NULL OR "Current_Version" IS NULL OR "Android_Version" IS NULL;
 
