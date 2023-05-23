@@ -120,3 +120,9 @@ WHERE "Size" LIKE '%k';
 UPDATE googleplaystore
 SET "Size" = REPLACE("Size", ',', '')
 WHERE "Size" LIKE '%,%';
+
+/*Android_Version -- Drop the "and up" and replace with "+"*/
+UPDATE googleplaystore
+SET "Android_Version" = REPLACE("Android_Version", ' and up', '+')
+WHERE "Android_Version" LIKE '% and up';
+
