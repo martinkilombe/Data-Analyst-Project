@@ -133,3 +133,17 @@ WHERE "Android_Version" LIKE '% and up';
 
 /*Data analysis and exploration*/
 SELECT AVG("Rating") as average_rating, SUM("Reviews") as total_number_Reviews FROM googleplaystore;
+
+/*Diferent "Types" in the table*/
+SELECT COUNT(DISTINCT "Type") as different_types FROM googleplaystore;
+
+/*Diferent "Genres" in the table*/
+SELECT COUNT(DISTINCT "Genres") as different_Genres FROM googleplaystore;
+
+
+/*Diferent "Content_Rating" in the table*/
+SELECT COUNT(DISTINCT "Content_Rating") as different_Content_Rating FROM googleplaystore;
+
+/*Number of priced apps "Price" in the table*/
+SELECT COUNT(DISTINCT "Price") as priced_apps FROM googleplaystore
+WHERE "Price" >0;
