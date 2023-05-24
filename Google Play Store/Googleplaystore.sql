@@ -131,3 +131,5 @@ UPDATE googleplaystore
 SET "Android_Version" = REPLACE("Android_Version", ' and up', '+')
 WHERE "Android_Version" LIKE '% and up';
 
+/*Data analysis and exploration*/
+SELECT AVG("Rating") as average_rating, SUM("Reviews") as total_number_Reviews FROM googleplaystore;
