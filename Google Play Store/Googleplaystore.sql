@@ -147,3 +147,13 @@ SELECT COUNT(DISTINCT "Content_Rating") as different_Content_Rating FROM googlep
 /*Number of priced apps "Price" in the table*/
 SELECT COUNT(DISTINCT "Price") as priced_apps FROM googleplaystore
 WHERE "Price" >0;
+
+/*Assigning rating metric score to the existing rating*/
+SELECT  "Rating",
+CASE
+WHEN "Rating"<2 THEN 'Low Rating'
+WHEN "Rating">2 AND "Rating"<4 THEN 'Average Rating'
+WHEN "Rating">=4 THEN 'High Rating'
+ELSE 'N/A'
+END AS rating_Score
+FROM googleplaystore
