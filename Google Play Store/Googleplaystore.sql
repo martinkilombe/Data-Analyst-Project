@@ -156,4 +156,18 @@ WHEN "Rating">2 AND "Rating"<4 THEN 'Average Rating'
 WHEN "Rating">=4 THEN 'High Rating'
 ELSE 'N/A'
 END AS rating_Score
-FROM googleplaystore
+FROM googleplaystore;
+
+/*Assigning average review rating to the reviews table*/
+SELECT 
+    subquery.average_reviews,
+    CASE
+        WHEN "Reviews" < subquery.average_reviews THEN 'Below Average Review Number'
+        WHEN "Reviews" >= subquery.average_reviews THEN 'Above Average Review Number'
+        ELSE 'Review N/A'
+    END AS Average_review_Score
+FROM (
+    SELECT AVG("Reviews") AS average_reviews
+    FROM googleplaystore
+) AS subquery, googleplaystore;
+
