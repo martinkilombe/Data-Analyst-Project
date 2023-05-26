@@ -189,3 +189,21 @@ BEFORE INSERT OR UPDATE ON googleplaystore
 FOR EACH ROW
 EXECUTE FUNCTION check_rating();
 
+-- Create the trigger for rating in postgress where reviews is less than 0
+CREATE OR REPLACE FUNCTION check_reviews()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.Reviews < 0 THEN
+        RAISE WARNING 'Warning: Reviews value should be greater than or equal to 0.';
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER reviews_trigger
+BEFORE INSERT OR UPDATE ON googleplaystore
+FOR EACH ROW
+EXECUTE FUNCTION check_reviews();
+
+
+
