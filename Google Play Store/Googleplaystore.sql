@@ -171,3 +171,21 @@ FROM (
     FROM googleplaystore
 ) AS subquery, googleplaystore;
 
+
+/*creating triggers that prevent adding rows woth reviews,rating and price less than 0 to the googleplaystore table*/
+-- Create the trigger for rating in postgress where rating is less than 0
+CREATE OR REPLACE FUNCTION check_rating()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.rating < 0 THEN
+        RAISE WARNING 'Warning: Rating value should be greater than or equal to 0.';
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER rating_trigger
+BEFORE INSERT OR UPDATE ON googleplaystore
+FOR EACH ROW
+EXECUTE FUNCTION check_rating();
+
