@@ -134,6 +134,17 @@ WHERE "Android_Version" LIKE '% and up';
 /*Data analysis and exploration*/
 SELECT AVG("Rating") as average_rating, SUM("Reviews") as total_number_Reviews FROM googleplaystore;
 
+/*Geting the median of the "Ratings" table*/
+SELECT AVG("Rating") AS median
+FROM (
+  SELECT "Rating", ROW_NUMBER() OVER (ORDER BY "Rating") AS row_num, COUNT(*) OVER () AS total_rows
+  FROM googleplaystore
+) sub
+WHERE row_num IN ((total_rows + 1) / 2, (total_rows + 2) / 2);
+
+
+
+
 /*Diferent "Types" in the table*/
 SELECT COUNT(DISTINCT "Type") as different_types FROM googleplaystore;
 
