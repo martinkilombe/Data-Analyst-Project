@@ -142,8 +142,18 @@ FROM (
 ) sub
 WHERE row_num IN ((total_rows + 1) / 2, (total_rows + 2) / 2);
 
-
-
+/*Geting the Mode of the "Ratings" table*/
+SELECT "Rating", COUNT(*) AS frequency
+FROM googleplaystore
+GROUP BY "Rating"
+HAVING COUNT(*) = (
+  SELECT MAX(freq) AS mode_frequency
+  FROM (
+    SELECT "Rating", COUNT(*) AS freq
+    FROM googleplaystore
+    GROUP BY "Rating"
+  ) sub
+);
 
 /*Diferent "Types" in the table*/
 SELECT COUNT(DISTINCT "Type") as different_types FROM googleplaystore;
