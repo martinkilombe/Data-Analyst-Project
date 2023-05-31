@@ -1168,7 +1168,7 @@
             <field>[federated.1elup2g17pthtb1cc9dzy004j65v].[yr:Last_Updated:ok]</field>
           </color-one-way>
         </highlight>
-        <default-map-tool-selection tool='2' />
+        <default-map-tool-selection tool='4' />
       </viewpoint>
       <simple-id uuid='{38E8D08E-0917-4B59-8E37-E8EA77379205}' />
     </window>
